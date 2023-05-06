@@ -1,7 +1,9 @@
-﻿namespace finalproject
+﻿using System.Data;
+namespace finalproject
 {
     partial class frmCategory
     {
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -32,7 +34,7 @@
             this.dgvCate = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -80,7 +82,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnClose);
+            this.groupBox2.Controls.Add(this.btnSave);
             this.groupBox2.Controls.Add(this.btnEdit);
             this.groupBox2.Controls.Add(this.btnDelete);
             this.groupBox2.Controls.Add(this.btnAdd);
@@ -90,14 +92,14 @@
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             // 
-            // btnClose
+            // btnSave
             // 
-            this.btnClose.Location = new System.Drawing.Point(142, 61);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(104, 35);
-            this.btnClose.TabIndex = 16;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnSave.Location = new System.Drawing.Point(142, 61);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(104, 35);
+            this.btnSave.TabIndex = 16;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // btnEdit
             // 
@@ -179,7 +181,10 @@
             this.Controls.Add(this.dgvCate);
             this.Controls.Add(this.label1);
             this.Name = "frmCategory";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Category";
+            this.Load += new System.EventHandler(this.frmCategory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCate)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -195,7 +200,7 @@
         private System.Windows.Forms.DataGridView dgvCate;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;

@@ -26,11 +26,11 @@ namespace finalproject.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\hoshi\\source\\repos\\f" +
-            "inalproject\\Warehousemanagement.mdf;Integrated Security=True;Connect Timeout=30")]
-        public string WarehousemanagementConn {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local)\\SQLEXPRESS;Initial Catalog=Warehousemanagement;Integrated Sec" +
+            "urity=True")]
+        public string Warehouseco {
             get {
-                return ((string)(this["WarehousemanagementConn"]));
+                return ((string)(this["Warehouseco"]));
             }
         }
     }

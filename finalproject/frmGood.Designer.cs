@@ -282,6 +282,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "frmGood";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmGood";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

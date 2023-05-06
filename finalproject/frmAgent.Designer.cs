@@ -36,14 +36,14 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.mtbPhone = new System.Windows.Forms.MaskedTextBox();
+            this.txtAgentAdress = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.v = new System.Windows.Forms.Label();
             this.txtAgentName = new System.Windows.Forms.TextBox();
             this.a = new System.Windows.Forms.Label();
             this.c = new System.Windows.Forms.Label();
             this.txtAgentID = new System.Windows.Forms.TextBox();
-            this.v = new System.Windows.Forms.Label();
-            this.txtAgentAdress = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.mtbPhone = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgent)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -136,6 +136,38 @@
             this.groupBox3.TabIndex = 14;
             this.groupBox3.TabStop = false;
             // 
+            // mtbPhone
+            // 
+            this.mtbPhone.Location = new System.Drawing.Point(117, 80);
+            this.mtbPhone.Name = "mtbPhone";
+            this.mtbPhone.Size = new System.Drawing.Size(290, 22);
+            this.mtbPhone.TabIndex = 17;
+            // 
+            // txtAgentAdress
+            // 
+            this.txtAgentAdress.Location = new System.Drawing.Point(117, 108);
+            this.txtAgentAdress.Name = "txtAgentAdress";
+            this.txtAgentAdress.Size = new System.Drawing.Size(290, 22);
+            this.txtAgentAdress.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(14, 111);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 16);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Adress";
+            // 
+            // v
+            // 
+            this.v.AutoSize = true;
+            this.v.Location = new System.Drawing.Point(14, 83);
+            this.v.Name = "v";
+            this.v.Size = new System.Drawing.Size(46, 16);
+            this.v.TabIndex = 7;
+            this.v.Text = "Phone";
+            // 
             // txtAgentName
             // 
             this.txtAgentName.Location = new System.Drawing.Point(117, 49);
@@ -168,38 +200,6 @@
             this.txtAgentID.Size = new System.Drawing.Size(290, 22);
             this.txtAgentID.TabIndex = 3;
             // 
-            // v
-            // 
-            this.v.AutoSize = true;
-            this.v.Location = new System.Drawing.Point(14, 83);
-            this.v.Name = "v";
-            this.v.Size = new System.Drawing.Size(46, 16);
-            this.v.TabIndex = 7;
-            this.v.Text = "Phone";
-            // 
-            // txtAgentAdress
-            // 
-            this.txtAgentAdress.Location = new System.Drawing.Point(117, 108);
-            this.txtAgentAdress.Name = "txtAgentAdress";
-            this.txtAgentAdress.Size = new System.Drawing.Size(290, 22);
-            this.txtAgentAdress.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 111);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 16);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Adress";
-            // 
-            // mtbPhone
-            // 
-            this.mtbPhone.Location = new System.Drawing.Point(117, 80);
-            this.mtbPhone.Name = "mtbPhone";
-            this.mtbPhone.Size = new System.Drawing.Size(290, 22);
-            this.mtbPhone.TabIndex = 17;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -219,6 +219,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvAgent);
             this.Name = "frmAgent";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmAgent";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgent)).EndInit();
             this.groupBox1.ResumeLayout(false);

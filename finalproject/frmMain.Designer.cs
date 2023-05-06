@@ -72,8 +72,9 @@
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(160, 30);
             this.logOutToolStripMenuItem.Text = "Log out";
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // mnuManagement
             // 
@@ -90,25 +91,26 @@
             // mnuCategory
             // 
             this.mnuCategory.Name = "mnuCategory";
-            this.mnuCategory.Size = new System.Drawing.Size(158, 26);
+            this.mnuCategory.Size = new System.Drawing.Size(224, 30);
             this.mnuCategory.Text = "Category";
+            this.mnuCategory.Click += new System.EventHandler(this.mnuCategory_Click);
             // 
             // mnuEmployee
             // 
             this.mnuEmployee.Name = "mnuEmployee";
-            this.mnuEmployee.Size = new System.Drawing.Size(158, 26);
+            this.mnuEmployee.Size = new System.Drawing.Size(224, 30);
             this.mnuEmployee.Text = "Employee";
             // 
             // mnuAgent
             // 
             this.mnuAgent.Name = "mnuAgent";
-            this.mnuAgent.Size = new System.Drawing.Size(158, 26);
+            this.mnuAgent.Size = new System.Drawing.Size(224, 30);
             this.mnuAgent.Text = "Agent";
             // 
             // mnuGood
             // 
             this.mnuGood.Name = "mnuGood";
-            this.mnuGood.Size = new System.Drawing.Size(158, 26);
+            this.mnuGood.Size = new System.Drawing.Size(224, 30);
             this.mnuGood.Text = "Good";
             // 
             // mnuReceipt
@@ -124,7 +126,7 @@
             // mnuReceiptR
             // 
             this.mnuReceiptR.Name = "mnuReceiptR";
-            this.mnuReceiptR.Size = new System.Drawing.Size(224, 30);
+            this.mnuReceiptR.Size = new System.Drawing.Size(195, 30);
             this.mnuReceiptR.Text = "Delivery Slip";
             // 
             // searchToolStripMenuItem
@@ -141,13 +143,13 @@
             // mnuReceiptS
             // 
             this.mnuReceiptS.Name = "mnuReceiptS";
-            this.mnuReceiptS.Size = new System.Drawing.Size(142, 26);
+            this.mnuReceiptS.Size = new System.Drawing.Size(155, 30);
             this.mnuReceiptS.Text = "Receipt";
             // 
             // mnuGoodS
             // 
             this.mnuGoodS.Name = "mnuGoodS";
-            this.mnuGoodS.Size = new System.Drawing.Size(142, 26);
+            this.mnuGoodS.Size = new System.Drawing.Size(155, 30);
             this.mnuGoodS.Text = "Good";
             // 
             // label1
@@ -157,10 +159,12 @@
             this.label1.Location = new System.Drawing.Point(56, 142);
             this.label1.Margin = new System.Windows.Forms.Padding(14, 0, 14, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(698, 54);
+            this.label1.Padding = new System.Windows.Forms.Padding(1, 0, 0, 1);
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label1.Size = new System.Drawing.Size(699, 55);
             this.label1.TabIndex = 1;
             this.label1.Text = "WAREHOUSE MANAGEMENT";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmMain
             // 
@@ -175,6 +179,7 @@
             this.Name = "frmMain";
             this.Text = "Warehouse Management";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

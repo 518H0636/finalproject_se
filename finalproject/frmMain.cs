@@ -51,5 +51,22 @@ namespace finalproject
         {
 
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            Class.Function.Connect();
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Class.Function.Disconnect();
+            Application.Exit();
+        }
+
+        private void mnuCategory_Click(object sender, EventArgs e)
+        {
+            frmCategory frmChatLieu = new frmCategory();
+            frmChatLieu.ShowDialog();
+        }
     }
 }

@@ -30,6 +30,12 @@
         {
             this.Employee = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.txtEmpName = new System.Windows.Forms.TextBox();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.mtbPhone = new System.Windows.Forms.MaskedTextBox();
             this.txtGreID = new System.Windows.Forms.TextBox();
             this.dasda = new System.Windows.Forms.Label();
@@ -41,12 +47,6 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvGre = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtEmpName = new System.Windows.Forms.TextBox();
-            this.txtTotal = new System.Windows.Forms.TextBox();
             this.Employee.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -83,6 +83,54 @@
             this.groupBox3.Size = new System.Drawing.Size(405, 163);
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.Location = new System.Drawing.Point(129, 136);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(233, 22);
+            this.txtTotal.TabIndex = 22;
+            // 
+            // txtEmpName
+            // 
+            this.txtEmpName.Location = new System.Drawing.Point(129, 108);
+            this.txtEmpName.Name = "txtEmpName";
+            this.txtEmpName.Size = new System.Drawing.Size(233, 22);
+            this.txtEmpName.TabIndex = 21;
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.Location = new System.Drawing.Point(285, 77);
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(77, 22);
+            this.maskedTextBox3.TabIndex = 20;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(243, 80);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(36, 16);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Year";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(14, 136);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 16);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Total";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(14, 108);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 16);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Employee ID";
             // 
             // mtbPhone
             // 
@@ -180,54 +228,6 @@
             this.dgvGre.Size = new System.Drawing.Size(763, 176);
             this.dgvGre.TabIndex = 18;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 108);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 16);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Employee ID";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 136);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 16);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Total";
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(285, 77);
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(77, 22);
-            this.maskedTextBox3.TabIndex = 20;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(243, 80);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 16);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Year";
-            // 
-            // txtEmpName
-            // 
-            this.txtEmpName.Location = new System.Drawing.Point(129, 108);
-            this.txtEmpName.Name = "txtEmpName";
-            this.txtEmpName.Size = new System.Drawing.Size(233, 22);
-            this.txtEmpName.TabIndex = 21;
-            // 
-            // txtTotal
-            // 
-            this.txtTotal.Location = new System.Drawing.Point(129, 136);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(233, 22);
-            this.txtTotal.TabIndex = 22;
-            // 
             // frmGoodRecieve
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -237,6 +237,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvGre);
             this.Name = "frmGoodRecieve";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmGoodRecieve";
             this.Employee.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);

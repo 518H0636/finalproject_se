@@ -15,11 +15,13 @@ namespace finalproject.Class
 
         public static void Connect()
         {
-            Con = new SqlConnection();
-            Con.ConnectionString = @"Data Source=.\SQLEXPRESS;AttachDbFilename=" + Application.StartupPath + @"\Warehousemanagement.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            Con.Open();
-            if (Con.State == ConnectionState.Open)
-                MessageBox.Show("Kết nối thành công");
+            Con = new SqlConnection();  
+            Con.ConnectionString = Properties.Settings.Default.Warehouseco;
+            if (Con.State != ConnectionState.Open)
+            {
+                Con.Open();
+                MessageBox.Show("Connect successfully");
+            }
             else MessageBox.Show("Can't connect");
         }
         public static void Disconnect()
@@ -30,6 +32,16 @@ namespace finalproject.Class
                 Con.Dispose();
                 Con = null;
             }
+        }
+        public static DataTable GetDataToTable(string sql)
+        {
+            SqlDataAdapter dap = new SqlDataAdapter();
+            dap.SelectCommand = new SqlCommand();
+            dap.SelectCommand.Connection = Function.Con;
+            dap.SelectCommand.CommandText = sql; 
+            DataTable table = new DataTable();
+            dap.Fill(table);
+            return table;
         }
     }
 }
