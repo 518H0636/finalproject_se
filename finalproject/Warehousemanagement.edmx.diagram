@@ -4,13 +4,13 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="01770166c3a54c9ea90b72be7f917a4a" Name="Diagram1">
+      <Diagram DiagramId="c2f1eb475fa84d7994aeabf000a5188c" Name="Diagram1">
         <EntityTypeShape EntityType="WarehousemanagementModel.tblAgent" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="WarehousemanagementModel.tblBillDetail" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="WarehousemanagementModel.tblCategory" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="WarehousemanagementModel.tblEmployee" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="WarehousemanagementModel.tblGood" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="WarehousemanagementModel.tblGoodRecieve" Width="1.5" PointX="4.875" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehousemanagementModel.tblGoodRecieve" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
