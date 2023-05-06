@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace finalproject
 {
-    public partial class Goodreived : Form
+    public partial class frmMain : Form
     {
-        public Goodreived()
+        public frmMain()
         {
             InitializeComponent();
         }
@@ -38,6 +38,16 @@ namespace finalproject
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void goodToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

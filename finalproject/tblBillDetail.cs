@@ -19,5 +19,6 @@ namespace finalproject
         public Nullable<double> amount { get; set; }
         public Nullable<double> unitPrice { get; set; }
         public Nullable<double> totalBill { get; set; }
+        public string billstatus { get; set; }
     }
 }
