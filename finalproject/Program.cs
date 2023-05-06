@@ -16,7 +16,7 @@ namespace finalproject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Goodreived());
+            Application.Run(new frmMain());
         }
     }
 }

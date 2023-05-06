@@ -25,6 +25,7 @@
           <Property Name="amount" Type="float" />
           <Property Name="unitPrice" Type="float" />
           <Property Name="totalBill" Type="float" />
+          <Property Name="billstatus" Type="nvarchar" MaxLength="10" Nullable="false" />
         </EntityType>
         <EntityType Name="tblCategory">
           <Key>
@@ -97,6 +98,7 @@
           <Property Name="amount" Type="Double" />
           <Property Name="unitPrice" Type="Double" />
           <Property Name="totalBill" Type="Double" />
+          <Property Name="billstatus" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
         <EntityType Name="tblCategory">
           <Key>
@@ -169,6 +171,7 @@
                 <ScalarProperty Name="amount" ColumnName="amount" />
                 <ScalarProperty Name="unitPrice" ColumnName="unitPrice" />
                 <ScalarProperty Name="totalBill" ColumnName="totalBill" />
+                <ScalarProperty Name="billstatus" ColumnName="billstatus" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

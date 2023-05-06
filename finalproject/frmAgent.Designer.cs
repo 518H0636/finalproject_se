@@ -1,6 +1,6 @@
 ﻿namespace finalproject
 {
-    partial class Goodreived
+    partial class frmAgent
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Goodreived
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(776, 450);
-            this.Name = "Goodreived";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "frmAgent";
         }
 
         #endregion
     }
 }
-
