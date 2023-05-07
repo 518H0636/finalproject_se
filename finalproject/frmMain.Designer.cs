@@ -100,12 +100,14 @@
             this.mnuEmployee.Name = "mnuEmployee";
             this.mnuEmployee.Size = new System.Drawing.Size(224, 30);
             this.mnuEmployee.Text = "Employee";
+            this.mnuEmployee.Click += new System.EventHandler(this.mnuEmployee_Click);
             // 
             // mnuAgent
             // 
             this.mnuAgent.Name = "mnuAgent";
             this.mnuAgent.Size = new System.Drawing.Size(224, 30);
             this.mnuAgent.Text = "Agent";
+            this.mnuAgent.Click += new System.EventHandler(this.mnuAgent_Click);
             // 
             // mnuGood
             // 
@@ -154,6 +156,9 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(56, 142);
