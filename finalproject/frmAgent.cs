@@ -166,11 +166,6 @@ namespace finalproject
         private void btnEdit_Click(object sender, EventArgs e)
         {
             string sql;
-            if (tblAgent.Rows.Count == 0)
-            {
-                MessageBox.Show("No data", "Notification", MessageBoxButtons.OK);
-                return;
-            }
             if (txtAgentID.Text == "")
             {
                 MessageBox.Show("Pls choose somthing to edit", "Notification", MessageBoxButtons.OK);

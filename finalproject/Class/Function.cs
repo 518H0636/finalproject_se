@@ -87,5 +87,25 @@ namespace finalproject.Class
             cmd.Dispose();
             cmd = null;
         }
+        public static void FillCombo(string sql, ComboBox cbo, string ma, string ten)
+        {
+            SqlDataAdapter dap = new SqlDataAdapter(sql, Con);
+            DataTable table = new DataTable();
+            dap.Fill(table);
+            cbo.DataSource = table;
+            cbo.ValueMember = ma;
+            cbo.DisplayMember = ten;
+        }
+        public static string FieldValues(string sql)
+        {
+            string ma = "";
+            SqlCommand cmd = new SqlCommand(sql, Con);
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+                ma = reader.GetValue(0).ToString();
+            reader.Close();
+            return ma;
+        }
     }
 }

@@ -114,6 +114,7 @@
             this.mnuGood.Name = "mnuGood";
             this.mnuGood.Size = new System.Drawing.Size(224, 30);
             this.mnuGood.Text = "Good";
+            this.mnuGood.Click += new System.EventHandler(this.mnuGood_Click);
             // 
             // mnuReceipt
             // 

@@ -80,5 +80,11 @@ namespace finalproject
             frmAgent frmAgent = new frmAgent();
             frmAgent.Show();
         }
+
+        private void mnuGood_Click(object sender, EventArgs e)
+        {
+            frmGood frmGood = new frmGood();
+            frmGood.Show();
+        }
     }
 }
