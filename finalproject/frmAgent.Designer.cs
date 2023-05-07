@@ -31,11 +31,13 @@
             this.dgvAgent = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.mtbPhone = new System.Windows.Forms.MaskedTextBox();
             this.txtAgentAdress = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,74 +56,83 @@
             // dgvAgent
             // 
             this.dgvAgent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAgent.Location = new System.Drawing.Point(24, 245);
+            this.dgvAgent.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvAgent.Location = new System.Drawing.Point(0, 295);
             this.dgvAgent.Name = "dgvAgent";
             this.dgvAgent.RowHeadersWidth = 51;
             this.dgvAgent.RowTemplate.Height = 24;
-            this.dgvAgent.Size = new System.Drawing.Size(746, 176);
+            this.dgvAgent.Size = new System.Drawing.Size(800, 243);
             this.dgvAgent.TabIndex = 0;
+            this.dgvAgent.Click += new System.EventHandler(this.dgvAgent_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Location = new System.Drawing.Point(25, 67);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox1.Location = new System.Drawing.Point(0, 71);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(745, 172);
+            this.groupBox1.Size = new System.Drawing.Size(800, 224);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agent management";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnClose);
+            this.groupBox2.Controls.Add(this.btnSave);
             this.groupBox2.Controls.Add(this.btnEdit);
             this.groupBox2.Controls.Add(this.btnDelete);
             this.groupBox2.Controls.Add(this.btnAdd);
             this.groupBox2.Location = new System.Drawing.Point(458, 17);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(281, 149);
+            this.groupBox2.Size = new System.Drawing.Size(281, 170);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             // 
-            // btnClose
+            // btnSave
             // 
-            this.btnClose.Location = new System.Drawing.Point(157, 95);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(104, 35);
-            this.btnClose.TabIndex = 16;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnSave.Location = new System.Drawing.Point(157, 111);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(104, 35);
+            this.btnSave.TabIndex = 16;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(25, 95);
+            this.btnEdit.Location = new System.Drawing.Point(25, 111);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(101, 35);
             this.btnEdit.TabIndex = 15;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(157, 27);
+            this.btnDelete.Location = new System.Drawing.Point(157, 36);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(104, 35);
             this.btnDelete.TabIndex = 14;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(25, 27);
+            this.btnAdd.Location = new System.Drawing.Point(25, 36);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(101, 35);
             this.btnAdd.TabIndex = 13;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.txtPass);
+            this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.mtbPhone);
             this.groupBox3.Controls.Add(this.txtAgentAdress);
             this.groupBox3.Controls.Add(this.label1);
@@ -132,9 +143,25 @@
             this.groupBox3.Controls.Add(this.txtAgentID);
             this.groupBox3.Location = new System.Drawing.Point(23, 17);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(427, 149);
+            this.groupBox3.Size = new System.Drawing.Size(427, 170);
             this.groupBox3.TabIndex = 14;
             this.groupBox3.TabStop = false;
+            // 
+            // txtPass
+            // 
+            this.txtPass.Location = new System.Drawing.Point(117, 136);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(290, 22);
+            this.txtPass.TabIndex = 19;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 139);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 16);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Password";
             // 
             // mtbPhone
             // 
@@ -202,26 +229,32 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(322, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 29);
+            this.label2.Padding = new System.Windows.Forms.Padding(1, 0, 0, 1);
+            this.label2.Size = new System.Drawing.Size(164, 30);
             this.label2.TabIndex = 12;
             this.label2.Text = "AGENT LIST";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // frmAgent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 538);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvAgent);
             this.Name = "frmAgent";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frmAgent";
+            this.Text = "Agent page";
+            this.Load += new System.EventHandler(this.frmAgent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgent)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -237,7 +270,7 @@
         private System.Windows.Forms.DataGridView dgvAgent;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;
@@ -251,5 +284,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox mtbPhone;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.Label label3;
     }
 }

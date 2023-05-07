@@ -31,18 +31,18 @@
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.Employee = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.mtbPhone = new System.Windows.Forms.MaskedTextBox();
+            this.txtEmpID = new System.Windows.Forms.TextBox();
             this.txtEmpPhone = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtEmpName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtEmpID = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.Employee.SuspendLayout();
@@ -58,6 +58,7 @@
             this.dgvEmployee.RowTemplate.Height = 24;
             this.dgvEmployee.Size = new System.Drawing.Size(703, 196);
             this.dgvEmployee.TabIndex = 0;
+            this.dgvEmployee.Click += new System.EventHandler(this.dgvEmployee_Click);
             // 
             // label1
             // 
@@ -71,7 +72,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnClose);
+            this.groupBox2.Controls.Add(this.btnSave);
             this.groupBox2.Controls.Add(this.btnEdit);
             this.groupBox2.Controls.Add(this.btnDelete);
             this.groupBox2.Controls.Add(this.btnAdd);
@@ -81,14 +82,15 @@
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             // 
-            // btnClose
+            // btnSave
             // 
-            this.btnClose.Location = new System.Drawing.Point(142, 61);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(104, 35);
-            this.btnClose.TabIndex = 16;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnSave.Location = new System.Drawing.Point(142, 61);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(104, 35);
+            this.btnSave.TabIndex = 16;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnEdit
             // 
@@ -98,6 +100,7 @@
             this.btnEdit.TabIndex = 15;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
@@ -107,6 +110,7 @@
             this.btnDelete.TabIndex = 14;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -116,6 +120,7 @@
             this.btnAdd.TabIndex = 13;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // Employee
             // 
@@ -149,6 +154,13 @@
             this.mtbPhone.Size = new System.Drawing.Size(214, 22);
             this.mtbPhone.TabIndex = 14;
             // 
+            // txtEmpID
+            // 
+            this.txtEmpID.Location = new System.Drawing.Point(129, 20);
+            this.txtEmpID.Name = "txtEmpID";
+            this.txtEmpID.Size = new System.Drawing.Size(214, 22);
+            this.txtEmpID.TabIndex = 10;
+            // 
             // txtEmpPhone
             // 
             this.txtEmpPhone.AutoSize = true;
@@ -157,6 +169,15 @@
             this.txtEmpPhone.Size = new System.Drawing.Size(46, 16);
             this.txtEmpPhone.TabIndex = 13;
             this.txtEmpPhone.Text = "Phone";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(14, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 16);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Employee ID";
             // 
             // txtEmpName
             // 
@@ -174,22 +195,6 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "Employee Name";
             // 
-            // txtEmpID
-            // 
-            this.txtEmpID.Location = new System.Drawing.Point(129, 20);
-            this.txtEmpID.Name = "txtEmpID";
-            this.txtEmpID.Size = new System.Drawing.Size(214, 22);
-            this.txtEmpID.TabIndex = 10;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 16);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Employee ID";
-            // 
             // frmEmployeeList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -200,6 +205,7 @@
             this.Controls.Add(this.dgvEmployee);
             this.Name = "frmEmployeeList";
             this.Text = "Employee List";
+            this.Load += new System.EventHandler(this.frmEmployeeList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.Employee.ResumeLayout(false);
@@ -215,7 +221,7 @@
         private System.Windows.Forms.DataGridView dgvEmployee;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;

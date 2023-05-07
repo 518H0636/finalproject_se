@@ -185,10 +185,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Warehousemanagement.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Warehousemanagement_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>Warehousemanagement.mdf</DependentUpon>
     </Content>
   </ItemGroup>

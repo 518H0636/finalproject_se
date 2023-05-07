@@ -65,8 +65,20 @@ namespace finalproject
 
         private void mnuCategory_Click(object sender, EventArgs e)
         {
-            frmCategory frmChatLieu = new frmCategory();
-            frmChatLieu.ShowDialog();
+            frmCategory frmCate = new frmCategory();
+            frmCate.ShowDialog();
+        }
+
+        private void mnuEmployee_Click(object sender, EventArgs e)
+        {
+            frmEmployeeList frmEmp = new frmEmployeeList();
+            frmEmp.Show();
+        }
+
+        private void mnuAgent_Click(object sender, EventArgs e)
+        {
+            frmAgent frmAgent = new frmAgent();
+            frmAgent.Show();
         }
     }
 }
