@@ -1,7 +1,9 @@
-﻿namespace finalproject
+﻿using System.Data;
+namespace finalproject
 {
     partial class frmCategory
     {
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -28,140 +30,184 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtCateID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtCateName = new System.Windows.Forms.TextBox();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.dgvCate = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtCateName = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCateID = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCate)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtCateID
-            // 
-            this.txtCateID.Location = new System.Drawing.Point(149, 71);
-            this.txtCateID.Name = "txtCateID";
-            this.txtCateID.Size = new System.Drawing.Size(213, 22);
-            this.txtCateID.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(351, 30);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(308, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 16);
+            this.label1.Size = new System.Drawing.Size(217, 29);
             this.label1.TabIndex = 1;
-            this.label1.Text = "CATEGORY";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(73, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "category ID";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(418, 74);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 16);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "category name";
-            // 
-            // txtCateName
-            // 
-            this.txtCateName.Location = new System.Drawing.Point(521, 71);
-            this.txtCateName.Name = "txtCateName";
-            this.txtCateName.Size = new System.Drawing.Size(204, 22);
-            this.txtCateName.TabIndex = 4;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(25, 116);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(101, 35);
-            this.btnAdd.TabIndex = 5;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(248, 116);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(104, 35);
-            this.btnDelete.TabIndex = 6;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Location = new System.Drawing.Point(462, 116);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(101, 35);
-            this.btnEdit.TabIndex = 7;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Location = new System.Drawing.Point(666, 116);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(104, 35);
-            this.btnClose.TabIndex = 8;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.label1.Text = "CATEGORY LIST";
             // 
             // dgvCate
             // 
             this.dgvCate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCate.Location = new System.Drawing.Point(25, 183);
+            this.dgvCate.Location = new System.Drawing.Point(25, 229);
             this.dgvCate.Name = "dgvCate";
             this.dgvCate.RowHeadersWidth = 51;
             this.dgvCate.RowTemplate.Height = 24;
-            this.dgvCate.Size = new System.Drawing.Size(745, 245);
+            this.dgvCate.Size = new System.Drawing.Size(745, 198);
             this.dgvCate.TabIndex = 9;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.groupBox3);
+            this.groupBox1.Location = new System.Drawing.Point(25, 64);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(745, 149);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Category management";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnSave);
+            this.groupBox2.Controls.Add(this.btnEdit);
+            this.groupBox2.Controls.Add(this.btnDelete);
+            this.groupBox2.Controls.Add(this.btnAdd);
+            this.groupBox2.Location = new System.Drawing.Point(458, 17);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(281, 114);
+            this.groupBox2.TabIndex = 15;
+            this.groupBox2.TabStop = false;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(142, 61);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(104, 35);
+            this.btnSave.TabIndex = 16;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(35, 61);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(101, 35);
+            this.btnEdit.TabIndex = 15;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(142, 20);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(104, 35);
+            this.btnDelete.TabIndex = 14;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(35, 20);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(101, 35);
+            this.btnAdd.TabIndex = 13;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txtCateName);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.txtCateID);
+            this.groupBox3.Location = new System.Drawing.Point(23, 17);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(427, 114);
+            this.groupBox3.TabIndex = 14;
+            this.groupBox3.TabStop = false;
+            // 
+            // txtCateName
+            // 
+            this.txtCateName.Location = new System.Drawing.Point(117, 68);
+            this.txtCateName.Name = "txtCateName";
+            this.txtCateName.Size = new System.Drawing.Size(290, 22);
+            this.txtCateName.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 71);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 16);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "category name";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(35, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 16);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "category ID";
+            // 
+            // txtCateID
+            // 
+            this.txtCateID.Location = new System.Drawing.Point(117, 26);
+            this.txtCateID.Name = "txtCateID";
+            this.txtCateID.Size = new System.Drawing.Size(290, 22);
+            this.txtCateID.TabIndex = 3;
             // 
             // frmCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvCate);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.txtCateName);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtCateID);
             this.Name = "frmCategory";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Category";
+            this.Load += new System.EventHandler(this.frmCategory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCate)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtCateID;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtCateName;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.DataGridView dgvCate;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox txtCateName;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtCateID;
     }
 }

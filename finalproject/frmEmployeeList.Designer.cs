@@ -30,17 +30,23 @@
         {
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtEmpID = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.Employee = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.mtbPhone = new System.Windows.Forms.MaskedTextBox();
+            this.txtEmpPhone = new System.Windows.Forms.Label();
             this.txtEmpName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtEmpPhone = new System.Windows.Forms.Label();
-            this.mtbPhone = new System.Windows.Forms.MaskedTextBox();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.txtEmpID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.Employee.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvEmployee
@@ -56,116 +62,149 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(351, 32);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(304, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 16);
+            this.label1.Size = new System.Drawing.Size(215, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "EMPLOYEE LIST";
             // 
-            // label2
+            // groupBox2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 104);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Employee ID";
+            this.groupBox2.Controls.Add(this.btnClose);
+            this.groupBox2.Controls.Add(this.btnEdit);
+            this.groupBox2.Controls.Add(this.btnDelete);
+            this.groupBox2.Controls.Add(this.btnAdd);
+            this.groupBox2.Location = new System.Drawing.Point(405, 21);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(281, 114);
+            this.groupBox2.TabIndex = 16;
+            this.groupBox2.TabStop = false;
             // 
-            // txtEmpID
+            // btnClose
             // 
-            this.txtEmpID.Location = new System.Drawing.Point(136, 98);
-            this.txtEmpID.Name = "txtEmpID";
-            this.txtEmpID.Size = new System.Drawing.Size(100, 22);
-            this.txtEmpID.TabIndex = 3;
+            this.btnClose.Location = new System.Drawing.Point(142, 61);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(104, 35);
+            this.btnClose.TabIndex = 16;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
             // 
-            // txtEmpName
+            // btnEdit
             // 
-            this.txtEmpName.Location = new System.Drawing.Point(401, 98);
-            this.txtEmpName.Name = "txtEmpName";
-            this.txtEmpName.Size = new System.Drawing.Size(100, 22);
-            this.txtEmpName.TabIndex = 5;
+            this.btnEdit.Location = new System.Drawing.Point(35, 61);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(101, 35);
+            this.btnEdit.TabIndex = 15;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // btnDelete
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(286, 101);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Employee Name";
+            this.btnDelete.Location = new System.Drawing.Point(142, 20);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(104, 35);
+            this.btnDelete.TabIndex = 14;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(35, 20);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(101, 35);
+            this.btnAdd.TabIndex = 13;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // Employee
+            // 
+            this.Employee.Controls.Add(this.groupBox3);
+            this.Employee.Controls.Add(this.groupBox2);
+            this.Employee.Location = new System.Drawing.Point(39, 52);
+            this.Employee.Name = "Employee";
+            this.Employee.Size = new System.Drawing.Size(703, 162);
+            this.Employee.TabIndex = 17;
+            this.Employee.TabStop = false;
+            this.Employee.Text = "Employee management";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.mtbPhone);
+            this.groupBox3.Controls.Add(this.txtEmpID);
+            this.groupBox3.Controls.Add(this.txtEmpPhone);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.txtEmpName);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Location = new System.Drawing.Point(18, 21);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(367, 114);
+            this.groupBox3.TabIndex = 17;
+            this.groupBox3.TabStop = false;
+            // 
+            // mtbPhone
+            // 
+            this.mtbPhone.Location = new System.Drawing.Point(129, 79);
+            this.mtbPhone.Name = "mtbPhone";
+            this.mtbPhone.Size = new System.Drawing.Size(214, 22);
+            this.mtbPhone.TabIndex = 14;
             // 
             // txtEmpPhone
             // 
             this.txtEmpPhone.AutoSize = true;
-            this.txtEmpPhone.Location = new System.Drawing.Point(575, 101);
+            this.txtEmpPhone.Location = new System.Drawing.Point(14, 80);
             this.txtEmpPhone.Name = "txtEmpPhone";
             this.txtEmpPhone.Size = new System.Drawing.Size(46, 16);
-            this.txtEmpPhone.TabIndex = 6;
+            this.txtEmpPhone.TabIndex = 13;
             this.txtEmpPhone.Text = "Phone";
             // 
-            // mtbPhone
+            // txtEmpName
             // 
-            this.mtbPhone.Location = new System.Drawing.Point(627, 98);
-            this.mtbPhone.Name = "mtbPhone";
-            this.mtbPhone.Size = new System.Drawing.Size(100, 22);
-            this.mtbPhone.TabIndex = 8;
+            this.txtEmpName.Location = new System.Drawing.Point(129, 48);
+            this.txtEmpName.Name = "txtEmpName";
+            this.txtEmpName.Size = new System.Drawing.Size(214, 22);
+            this.txtEmpName.TabIndex = 12;
             // 
-            // btnAdd
+            // label3
             // 
-            this.btnAdd.Location = new System.Drawing.Point(39, 162);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(138, 38);
-            this.btnAdd.TabIndex = 9;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 51);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 16);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Employee Name";
             // 
-            // btnDelete
+            // txtEmpID
             // 
-            this.btnDelete.Location = new System.Drawing.Point(246, 162);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(138, 38);
-            this.btnDelete.TabIndex = 10;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.txtEmpID.Location = new System.Drawing.Point(129, 20);
+            this.txtEmpID.Name = "txtEmpID";
+            this.txtEmpID.Size = new System.Drawing.Size(214, 22);
+            this.txtEmpID.TabIndex = 10;
             // 
-            // btnEdit
+            // label2
             // 
-            this.btnEdit.Location = new System.Drawing.Point(426, 162);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(138, 38);
-            this.btnEdit.TabIndex = 11;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Location = new System.Drawing.Point(604, 162);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(138, 38);
-            this.btnClose.TabIndex = 12;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(14, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 16);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Employee ID";
             // 
             // frmEmployeeList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.mtbPhone);
-            this.Controls.Add(this.txtEmpPhone);
-            this.Controls.Add(this.txtEmpName);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtEmpID);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Employee);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvEmployee);
             this.Name = "frmEmployeeList";
             this.Text = "Employee List";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.Employee.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,15 +214,18 @@
 
         private System.Windows.Forms.DataGridView dgvEmployee;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.GroupBox Employee;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.MaskedTextBox mtbPhone;
         private System.Windows.Forms.TextBox txtEmpID;
+        private System.Windows.Forms.Label txtEmpPhone;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtEmpName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label txtEmpPhone;
-        private System.Windows.Forms.MaskedTextBox mtbPhone;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Button btnClose;
     }
 }
