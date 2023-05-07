@@ -116,11 +116,6 @@ namespace finalproject
         private void btnEdit_Click(object sender, EventArgs e)
         {
             string sql;
-            if (tblCategory.Rows.Count == 0)
-            {
-                MessageBox.Show("No data", "Notification", MessageBoxButtons.OK);
-                return;
-            }
             if (txtCateID.Text == "")
             {
                 MessageBox.Show("Choose somthing to edit first", "Notification", MessageBoxButtons.OK);
