@@ -133,6 +133,39 @@
     <Compile Include="StaffLogin.Designer.cs">
       <DependentUpon>StaffLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="tblAgent.cs">
+      <DependentUpon>Warehousemanagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBillDetail.cs">
+      <DependentUpon>Warehousemanagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCategory.cs">
+      <DependentUpon>Warehousemanagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmployee.cs">
+      <DependentUpon>Warehousemanagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblGood.cs">
+      <DependentUpon>Warehousemanagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblGoodRecieve.cs">
+      <DependentUpon>Warehousemanagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Warehousemanagement.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Warehousemanagement.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Warehousemanagement.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Warehousemanagement.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Warehousemanagement.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Warehousemanagement.edmx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmAgent.resx">
       <DependentUpon>frmAgent.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,21 +209,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EntityDeploy Include="Warehousemanagement.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Warehousemanagement.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Warehousemanagement.edmx.diagram">
+      <DependentUpon>Warehousemanagement.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Warehousemanagement.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Warehousemanagement_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <DependentUpon>Warehousemanagement.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -203,6 +234,18 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Warehousemanagement.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Warehousemanagement.edmx</DependentUpon>
+      <LastGenOutput>Warehousemanagement.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Warehousemanagement.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Warehousemanagement.edmx</DependentUpon>
+      <LastGenOutput>Warehousemanagement.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

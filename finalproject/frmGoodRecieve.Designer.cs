@@ -30,18 +30,13 @@
         {
             this.Employee = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtTotal = new System.Windows.Forms.TextBox();
-            this.txtEmpName = new System.Windows.Forms.TextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.txtdate = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.mtbPhone = new System.Windows.Forms.MaskedTextBox();
-            this.txtGreID = new System.Windows.Forms.TextBox();
-            this.dasda = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtAgentName = new System.Windows.Forms.TextBox();
+            this.txtStatus = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtGreID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -66,119 +61,76 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.txtTotal);
-            this.groupBox3.Controls.Add(this.txtEmpName);
-            this.groupBox3.Controls.Add(this.maskedTextBox3);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.btnEdit);
+            this.groupBox3.Controls.Add(this.txtdate);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.mtbPhone);
-            this.groupBox3.Controls.Add(this.txtGreID);
-            this.groupBox3.Controls.Add(this.dasda);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.txtAgentName);
+            this.groupBox3.Controls.Add(this.txtStatus);
             this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.txtGreID);
+            this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Location = new System.Drawing.Point(18, 21);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(405, 163);
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
             // 
-            // txtTotal
+            // btnEdit
             // 
-            this.txtTotal.Location = new System.Drawing.Point(129, 136);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(233, 22);
-            this.txtTotal.TabIndex = 22;
+            this.btnEdit.Location = new System.Drawing.Point(27, 99);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(335, 50);
+            this.btnEdit.TabIndex = 16;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // txtEmpName
+            // txtdate
             // 
-            this.txtEmpName.Location = new System.Drawing.Point(129, 108);
-            this.txtEmpName.Name = "txtEmpName";
-            this.txtEmpName.Size = new System.Drawing.Size(233, 22);
-            this.txtEmpName.TabIndex = 21;
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(285, 77);
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(77, 22);
-            this.maskedTextBox3.TabIndex = 20;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(243, 80);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 16);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Year";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 136);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 16);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Total";
+            this.txtdate.Location = new System.Drawing.Point(129, 69);
+            this.txtdate.Name = "txtdate";
+            this.txtdate.Size = new System.Drawing.Size(233, 22);
+            this.txtdate.TabIndex = 14;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 108);
+            this.label4.Location = new System.Drawing.Point(14, 74);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 16);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Employee ID";
+            this.label4.Size = new System.Drawing.Size(60, 16);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Sell date";
             // 
-            // mtbPhone
+            // txtStatus
             // 
-            this.mtbPhone.Location = new System.Drawing.Point(129, 79);
-            this.mtbPhone.Name = "mtbPhone";
-            this.mtbPhone.Size = new System.Drawing.Size(77, 22);
-            this.mtbPhone.TabIndex = 14;
-            // 
-            // txtGreID
-            // 
-            this.txtGreID.Location = new System.Drawing.Point(129, 20);
-            this.txtGreID.Name = "txtGreID";
-            this.txtGreID.Size = new System.Drawing.Size(233, 22);
-            this.txtGreID.TabIndex = 10;
-            // 
-            // dasda
-            // 
-            this.dasda.AutoSize = true;
-            this.dasda.Location = new System.Drawing.Point(14, 80);
-            this.dasda.Name = "dasda";
-            this.dasda.Size = new System.Drawing.Size(43, 16);
-            this.dasda.TabIndex = 13;
-            this.dasda.Text = "Month";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 16);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Receipt ID";
-            // 
-            // txtAgentName
-            // 
-            this.txtAgentName.Location = new System.Drawing.Point(129, 48);
-            this.txtAgentName.Name = "txtAgentName";
-            this.txtAgentName.Size = new System.Drawing.Size(233, 22);
-            this.txtAgentName.TabIndex = 12;
+            this.txtStatus.Location = new System.Drawing.Point(129, 41);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.Size = new System.Drawing.Size(233, 22);
+            this.txtStatus.TabIndex = 12;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 51);
+            this.label3.Location = new System.Drawing.Point(14, 44);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 16);
+            this.label3.Size = new System.Drawing.Size(44, 16);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Agent ID";
+            this.label3.Text = "Status";
+            // 
+            // txtGreID
+            // 
+            this.txtGreID.Location = new System.Drawing.Point(129, 11);
+            this.txtGreID.Name = "txtGreID";
+            this.txtGreID.Size = new System.Drawing.Size(233, 22);
+            this.txtGreID.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(14, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 16);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Agent Name";
             // 
             // groupBox2
             // 
@@ -198,6 +150,7 @@
             this.btnClose.TabIndex = 15;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSearch
             // 
@@ -207,6 +160,7 @@
             this.btnSearch.TabIndex = 13;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // label1
             // 
@@ -227,6 +181,7 @@
             this.dgvGre.RowTemplate.Height = 24;
             this.dgvGre.Size = new System.Drawing.Size(763, 176);
             this.dgvGre.TabIndex = 18;
+            this.dgvGre.Click += new System.EventHandler(this.dgvGre_Click);
             // 
             // frmGoodRecieve
             // 
@@ -240,6 +195,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmGoodRecieve";
+            this.Load += new System.EventHandler(this.frmGoodRecieve_Load);
             this.Employee.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -253,23 +209,18 @@
         #endregion
 
         private System.Windows.Forms.GroupBox Employee;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MaskedTextBox mtbPhone;
-        private System.Windows.Forms.TextBox txtGreID;
-        private System.Windows.Forms.Label dasda;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtAgentName;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvGre;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtTotal;
-        private System.Windows.Forms.TextBox txtEmpName;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox txtGreID;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker txtdate;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtStatus;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnEdit;
     }
 }

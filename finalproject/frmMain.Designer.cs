@@ -38,9 +38,6 @@
             this.mnuGood = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuReceipt = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuReceiptR = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuReceiptS = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuGoodS = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -51,8 +48,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuFile,
             this.mnuManagement,
-            this.mnuReceipt,
-            this.searchToolStripMenuItem});
+            this.mnuReceipt});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(36, 9, 0, 9);
@@ -72,7 +68,7 @@
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(160, 30);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -91,28 +87,28 @@
             // mnuCategory
             // 
             this.mnuCategory.Name = "mnuCategory";
-            this.mnuCategory.Size = new System.Drawing.Size(224, 30);
+            this.mnuCategory.Size = new System.Drawing.Size(176, 30);
             this.mnuCategory.Text = "Category";
             this.mnuCategory.Click += new System.EventHandler(this.mnuCategory_Click);
             // 
             // mnuEmployee
             // 
             this.mnuEmployee.Name = "mnuEmployee";
-            this.mnuEmployee.Size = new System.Drawing.Size(224, 30);
+            this.mnuEmployee.Size = new System.Drawing.Size(176, 30);
             this.mnuEmployee.Text = "Employee";
             this.mnuEmployee.Click += new System.EventHandler(this.mnuEmployee_Click);
             // 
             // mnuAgent
             // 
             this.mnuAgent.Name = "mnuAgent";
-            this.mnuAgent.Size = new System.Drawing.Size(224, 30);
+            this.mnuAgent.Size = new System.Drawing.Size(176, 30);
             this.mnuAgent.Text = "Agent";
             this.mnuAgent.Click += new System.EventHandler(this.mnuAgent_Click);
             // 
             // mnuGood
             // 
             this.mnuGood.Name = "mnuGood";
-            this.mnuGood.Size = new System.Drawing.Size(224, 30);
+            this.mnuGood.Size = new System.Drawing.Size(176, 30);
             this.mnuGood.Text = "Good";
             this.mnuGood.Click += new System.EventHandler(this.mnuGood_Click);
             // 
@@ -122,38 +118,16 @@
             this.mnuReceiptR});
             this.mnuReceipt.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuReceipt.Name = "mnuReceipt";
-            this.mnuReceipt.Size = new System.Drawing.Size(83, 29);
-            this.mnuReceipt.Text = "Receipt";
+            this.mnuReceipt.Size = new System.Drawing.Size(72, 29);
+            this.mnuReceipt.Text = "Order";
             this.mnuReceipt.Click += new System.EventHandler(this.goodToolStripMenuItem_Click);
             // 
             // mnuReceiptR
             // 
             this.mnuReceiptR.Name = "mnuReceiptR";
-            this.mnuReceiptR.Size = new System.Drawing.Size(195, 30);
-            this.mnuReceiptR.Text = "Delivery Slip";
-            // 
-            // searchToolStripMenuItem
-            // 
-            this.searchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuReceiptS,
-            this.mnuGoodS});
-            this.searchToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(78, 29);
-            this.searchToolStripMenuItem.Text = "Search";
-            this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
-            // 
-            // mnuReceiptS
-            // 
-            this.mnuReceiptS.Name = "mnuReceiptS";
-            this.mnuReceiptS.Size = new System.Drawing.Size(155, 30);
-            this.mnuReceiptS.Text = "Receipt";
-            // 
-            // mnuGoodS
-            // 
-            this.mnuGoodS.Name = "mnuGoodS";
-            this.mnuGoodS.Size = new System.Drawing.Size(155, 30);
-            this.mnuGoodS.Text = "Good";
+            this.mnuReceiptR.Size = new System.Drawing.Size(224, 30);
+            this.mnuReceiptR.Text = "Change Status";
+            this.mnuReceiptR.Click += new System.EventHandler(this.mnuReceiptR_Click);
             // 
             // label1
             // 
@@ -205,9 +179,6 @@
         private System.Windows.Forms.ToolStripMenuItem mnuGood;
         private System.Windows.Forms.ToolStripMenuItem mnuReceipt;
         private System.Windows.Forms.ToolStripMenuItem mnuReceiptR;
-        private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnuReceiptS;
-        private System.Windows.Forms.ToolStripMenuItem mnuGoodS;
         private System.Windows.Forms.Label label1;
     }
 }

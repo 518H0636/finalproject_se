@@ -28,9 +28,9 @@ namespace finalproject.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local)\\SQLEXPRESS;Initial Catalog=Warehousemanagement;Integrated Sec" +
             "urity=True")]
-        public string Warehouseco {
+        public string Warehousemanagement {
             get {
-                return ((string)(this["Warehouseco"]));
+                return ((string)(this["Warehousemanagement"]));
             }
         }
     }
