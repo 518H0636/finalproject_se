@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="WarehousemanagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="WarehousemanagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tblAgent">
           <Key>
             <PropertyRef Name="agentID" />
@@ -24,6 +24,7 @@
           <Property Name="orderID" Type="int" />
           <Property Name="unitSold" Type="float" />
           <Property Name="billAmount" Type="float" />
+          <Property Name="totalM" Type="float" />
         </EntityType>
         <EntityType Name="tblCategory">
           <Key>
@@ -62,7 +63,7 @@
           <Property Name="sellDate" Type="datetime" />
           <Property Name="StatusG" Type="nvarchar" MaxLength="10" />
         </EntityType>
-        <Association Name="FK__tblBillDe__order__534D60F1">
+        <Association Name="FK__tblBillDe__order__5629CD9C">
           <End Role="tblGoodRecieve" Type="Self.tblGoodRecieve" Multiplicity="0..1" />
           <End Role="tblBillDetail" Type="Self.tblBillDetail" Multiplicity="*" />
           <ReferentialConstraint>
@@ -81,13 +82,12 @@
           <EntitySet Name="tblEmployee" EntityType="Self.tblEmployee" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblGood" EntityType="Self.tblGood" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblGoodRecieve" EntityType="Self.tblGoodRecieve" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__tblBillDe__order__534D60F1" Association="Self.FK__tblBillDe__order__534D60F1">
+          <AssociationSet Name="FK__tblBillDe__order__5629CD9C" Association="Self.FK__tblBillDe__order__5629CD9C">
             <End Role="tblGoodRecieve" EntitySet="tblGoodRecieve" />
             <End Role="tblBillDetail" EntitySet="tblBillDetail" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="WarehousemanagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -111,6 +111,7 @@
           <Property Name="unitSold" Type="Double" />
           <Property Name="billAmount" Type="Double" />
           <NavigationProperty Name="tblGoodRecieve" Relationship="Self.FK__tblBillDe__order__534D60F1" FromRole="tblBillDetail" ToRole="tblGoodRecieve" />
+          <Property Name="totalM" Type="Double" />
         </EntityType>
         <EntityType Name="tblCategory">
           <Key>
@@ -194,6 +195,7 @@
           <EntitySetMapping Name="tblBillDetail">
             <EntityTypeMapping TypeName="WarehousemanagementModel.tblBillDetail">
               <MappingFragment StoreEntitySet="tblBillDetail">
+                <ScalarProperty Name="totalM" ColumnName="totalM" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="goodID" ColumnName="goodID" />
                 <ScalarProperty Name="orderID" ColumnName="orderID" />
