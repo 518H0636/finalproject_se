@@ -16,7 +16,7 @@ namespace finalproject.Class
         public static void Connect()
         {
             Con = new SqlConnection();  
-            Con.ConnectionString = Properties.Settings.Default.Warehouseco;
+            Con.ConnectionString = Properties.Settings.Default.Warehousemanagement;
             if (Con.State != ConnectionState.Open)
             {
                 Con.Open();

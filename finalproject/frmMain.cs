@@ -86,5 +86,11 @@ namespace finalproject
             frmGood frmGood = new frmGood();
             frmGood.Show();
         }
+
+        private void mnuReceiptR_Click(object sender, EventArgs e)
+        {
+            frmGoodRecieve frmGoodRecieve = new frmGoodRecieve();
+            frmGoodRecieve.Show();
+        }
     }
 }
