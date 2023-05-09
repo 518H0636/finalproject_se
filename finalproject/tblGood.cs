@@ -14,6 +14,12 @@ namespace finalproject
     
     public partial class tblGood
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public tblGood()
+        {
+            this.tblBillDetail = new HashSet<tblBillDetail>();
+        }
+    
         public string goodID { get; set; }
         public string goodName { get; set; }
         public string cateID { get; set; }
@@ -21,5 +27,9 @@ namespace finalproject
         public Nullable<double> unitPrice { get; set; }
         public Nullable<double> unitSold { get; set; }
         public string importnote { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tblBillDetail> tblBillDetail { get; set; }
+        public virtual tblCategory tblCategory { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraReports.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -59,8 +60,9 @@ namespace finalproject
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Class.Function.Disconnect();
-            Application.Exit();
+            this.Close();
+            StaffLogin StaffLogin = new StaffLogin();
+            StaffLogin.Show();
         }
 
         private void mnuCategory_Click(object sender, EventArgs e)
@@ -91,6 +93,13 @@ namespace finalproject
         {
             frmGoodRecieve frmGoodRecieve = new frmGoodRecieve();
             frmGoodRecieve.Show();
+        }
+
+        private void reportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReport frmReport = new frmReport();
+            frmReport.CreateDocument();
+            frmReport.ShowPreview();
         }
     }
 }

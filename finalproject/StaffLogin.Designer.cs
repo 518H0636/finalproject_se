@@ -43,7 +43,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(78, 141);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 39);
+            this.label1.Size = new System.Drawing.Size(183, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "User Name";
             // 
@@ -61,7 +61,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(303, 32);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(190, 39);
+            this.label3.Size = new System.Drawing.Size(183, 38);
             this.label3.TabIndex = 4;
             this.label3.Text = "Staff Login";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -80,7 +80,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(78, 211);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 39);
+            this.label2.Size = new System.Drawing.Size(161, 38);
             this.label2.TabIndex = 5;
             this.label2.Text = "Passwork";
             // 
@@ -93,6 +93,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Log in";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 

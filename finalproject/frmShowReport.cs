@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace finalproject
 {
-    public partial class frmBillDetail : Form
+    public partial class frmShowReport : Form
     {
-        public frmBillDetail()
+        public frmShowReport()
         {
             InitializeComponent();
-        }
-
-        private void panelControl2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

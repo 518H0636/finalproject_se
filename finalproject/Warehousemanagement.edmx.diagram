@@ -12,6 +12,9 @@
         <EntityTypeShape EntityType="WarehousemanagementModel.tblGood" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="WarehousemanagementModel.tblGoodRecieve" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="WarehousemanagementModel.FK__tblBillDe__order__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="WarehousemanagementModel.FK__tblGoodRe__agent__5441852A" />
+        <AssociationConnector Association="WarehousemanagementModel.FK__tblBillDe__goodI__5629CD9C" />
+        <AssociationConnector Association="WarehousemanagementModel.FK__tblGood__cateID__534D60F1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

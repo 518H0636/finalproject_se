@@ -14,10 +14,19 @@ namespace finalproject
     
     public partial class tblAgent
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public tblAgent()
+        {
+            this.tblGoodRecieve = new HashSet<tblGoodRecieve>();
+        }
+    
         public string agentID { get; set; }
         public string agentName { get; set; }
         public string phoneNum { get; set; }
         public string agentAdress { get; set; }
         public string agentPass { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tblGoodRecieve> tblGoodRecieve { get; set; }
     }
 }

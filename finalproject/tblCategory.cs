@@ -14,7 +14,16 @@ namespace finalproject
     
     public partial class tblCategory
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public tblCategory()
+        {
+            this.tblGood = new HashSet<tblGood>();
+        }
+    
         public string cateID { get; set; }
         public string cateName { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tblGood> tblGood { get; set; }
     }
 }
