@@ -128,9 +128,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(14, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 16);
+            this.label2.Size = new System.Drawing.Size(58, 16);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Agent Name";
+            this.label2.Text = "Agent ID";
             // 
             // groupBox2
             // 
@@ -168,9 +168,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(258, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(341, 29);
+            this.label1.Size = new System.Drawing.Size(379, 29);
             this.label1.TabIndex = 19;
-            this.label1.Text = "CHECK DELIVERY STATUS";
+            this.label1.Text = "DELIVERY STATUS MANAGER";
             // 
             // dgvGre
             // 
