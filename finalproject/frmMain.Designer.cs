@@ -167,7 +167,6 @@
             this.Margin = new System.Windows.Forms.Padding(14, 13, 14, 13);
             this.Name = "frmMain";
             this.Text = "Warehouse Management";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
