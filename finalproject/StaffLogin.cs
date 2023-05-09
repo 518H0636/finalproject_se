@@ -48,7 +48,7 @@ namespace finalproject
                 }
                 else
                 {
-                    MessageBox.Show("Invalid login","",MessageBoxButtons.OK);
+                    MessageBox.Show("Invalid log in","",MessageBoxButtons.OK);
                     textBox1.Clear();
                     textBox2.Clear();
                     textBox1.Focus();
@@ -60,9 +60,9 @@ namespace finalproject
             }
         }
 
-        private void StaffLogin_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
