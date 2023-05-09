@@ -20,7 +20,6 @@ namespace finalproject.Class
             if (Con.State != ConnectionState.Open)
             {
                 Con.Open();
-                MessageBox.Show("Connect successfully");
             }
             else MessageBox.Show("Can't connect");
         }

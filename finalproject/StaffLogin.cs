@@ -60,5 +60,9 @@ namespace finalproject
             }
         }
 
+        private void StaffLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

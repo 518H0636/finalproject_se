@@ -80,7 +80,7 @@ namespace finalproject
             }
             txtGreID.Text = dgvGre.CurrentRow.Cells["agentID"].Value.ToString();
             txtdate.Text = dgvGre.CurrentRow.Cells["sellDate"].Value.ToString();
-            txtdate.Text = dgvGre.CurrentRow.Cells["StatusG"].Value.ToString();
+            txtStatus.Text = dgvGre.CurrentRow.Cells["StatusG"].Value.ToString();
             btnEdit.Enabled = true;
             txtdate.Enabled = true;
             txtStatus.Enabled = true;
