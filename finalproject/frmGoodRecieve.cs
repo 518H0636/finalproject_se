@@ -81,7 +81,7 @@ namespace finalproject
             txtGreID.Text = dgvGre.CurrentRow.Cells["agentID"].Value.ToString();
             txtdate.Text = dgvGre.CurrentRow.Cells["sellDate"].Value.ToString();
             txtdate.Text = dgvGre.CurrentRow.Cells["StatusG"].Value.ToString();
-            btnEdit.Enabled = false;
+            btnEdit.Enabled = true;
             txtdate.Enabled = true;
             txtStatus.Enabled = true;
         }
@@ -98,7 +98,7 @@ namespace finalproject
             }
             sql = "UPDATE tblGoodRecieve SET StatusG=N'" +
                 txtStatus.Text.ToString() +
-                "' WHERE StatusG=N'" + txtStatus.Text + "'";
+                "' WHERE AgentID=N'" + txtGreID.Text + "'";
             Class.Function.RunSQL(sql);
             LoadDataGridView();
             RV();
