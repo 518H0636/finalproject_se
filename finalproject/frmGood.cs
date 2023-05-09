@@ -213,8 +213,7 @@ namespace finalproject
                 return;
             }
             sql = "SELECT * from tblGood WHERE 1=1";
-            if (txtNote.Text != "")
-                sql += " AND importnote LIKE N'%" + txtNote.Text + "%'";
+            sql += " AND importnote LIKE N'%" + txtNote.Text + "'";
             tblGood = Function.GetDataToTable(sql);
             if (tblGood.Rows.Count == 0)
                 MessageBox.Show("There is no import reciept with your input info", "", MessageBoxButtons.OK);

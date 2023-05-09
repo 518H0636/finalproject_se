@@ -119,6 +119,7 @@
             this.Controls.Add(this.label1);
             this.Name = "StaffLogin";
             this.Text = "StaffLogin";
+            this.Load += new System.EventHandler(this.StaffLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

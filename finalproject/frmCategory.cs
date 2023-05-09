@@ -128,7 +128,7 @@ namespace finalproject
             }
             sql = "UPDATE tblCategory SET cateName=N'" +
                 txtCateName.Text.ToString() +
-                "' WHERE cateName=N'" + txtCateName.Text + "'";
+                "' WHERE cateID=N'" + txtCateID.Text + "'";
             Class.Function.RunSQL(sql);
             LoadDataGridView();
             RV();
