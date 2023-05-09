@@ -177,10 +177,12 @@ namespace finalproject
             }
             sql = "UPDATE tblGood SET goodName=N'" + txtGoodName.Text.Trim().ToString() +
                 "',cateID=N'" + cboCategory.SelectedValue.ToString() +
-                "',SoLuong=" + txtAmount.Text + "',importnote=N'" + txtNote.Text + "' WHERE goodID=N'" + txtGoodID.Text + "'";
+                "',goodAmount='" + txtAmount.Text + 
+                "',importnote=N'" + txtNote.Text.ToString() + "' WHERE goodID=N'" + txtGoodID.Text + "'";
             Function.RunSQL(sql);
             LoadDataGridView();
             RV();
+            btnSave.Enabled = false;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
