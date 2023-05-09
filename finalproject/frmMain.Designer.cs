@@ -63,13 +63,13 @@
             this.logOutToolStripMenuItem});
             this.mnuFile.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(52, 29);
-            this.mnuFile.Text = "File";
+            this.mnuFile.Size = new System.Drawing.Size(61, 29);
+            this.mnuFile.Text = "User";
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(160, 30);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -167,7 +167,6 @@
             this.Margin = new System.Windows.Forms.Padding(14, 13, 14, 13);
             this.Name = "frmMain";
             this.Text = "Warehouse Management";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
