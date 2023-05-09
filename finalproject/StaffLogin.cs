@@ -48,7 +48,7 @@ namespace finalproject
                 }
                 else
                 {
-                    MessageBox.Show("Invalid log in","",MessageBoxButtons.OK);
+                    MessageBox.Show("Invalid login","",MessageBoxButtons.OK);
                     textBox1.Clear();
                     textBox2.Clear();
                     textBox1.Focus();
