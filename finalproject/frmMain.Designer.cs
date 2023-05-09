@@ -38,6 +38,7 @@
             this.mnuGood = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuReceipt = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuReceiptR = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -68,7 +69,7 @@
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(160, 30);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -115,7 +116,8 @@
             // mnuReceipt
             // 
             this.mnuReceipt.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuReceiptR});
+            this.mnuReceiptR,
+            this.reportToolStripMenuItem});
             this.mnuReceipt.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuReceipt.Name = "mnuReceipt";
             this.mnuReceipt.Size = new System.Drawing.Size(72, 29);
@@ -125,9 +127,16 @@
             // mnuReceiptR
             // 
             this.mnuReceiptR.Name = "mnuReceiptR";
-            this.mnuReceiptR.Size = new System.Drawing.Size(224, 30);
+            this.mnuReceiptR.Size = new System.Drawing.Size(211, 30);
             this.mnuReceiptR.Text = "Change Status";
             this.mnuReceiptR.Click += new System.EventHandler(this.mnuReceiptR_Click);
+            // 
+            // reportToolStripMenuItem
+            // 
+            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
+            this.reportToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.reportToolStripMenuItem.Text = "Report";
+            this.reportToolStripMenuItem.Click += new System.EventHandler(this.reportToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -180,6 +189,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuReceipt;
         private System.Windows.Forms.ToolStripMenuItem mnuReceiptR;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
     }
 }
 
